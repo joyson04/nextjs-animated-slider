@@ -8,7 +8,7 @@ COPY package*.json ./
 RUN yarn install --frozen-lockfile
 
 # Copy all source code
-COPY ./app* /
+COPY . .
 
 # Build Next.js app
 RUN yarn build
